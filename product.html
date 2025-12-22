@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Product details - REHOTTOP automotive accessories">
+  <meta name="author" content="REHOTTOP">
+
+  <title>Product Details - REHOTTOP</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+
+  <!-- Cache Control -->
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/variables.css?v=1765337111">
+  <link rel="stylesheet" href="assets/css/reset.css?v=1765337111">
+  <link rel="stylesheet" href="assets/css/styles.css?v=1765337111">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-content">
+      <a href="index.html" class="logo">REHOTTOP</a>
+
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#products">Products</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </nav>
+
+      <div style="display: flex; align-items: center; gap: 1rem;">
+        <div class="cart-icon" onclick="openCart()" title="Shopping Cart">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+          <span id="cart-count" class="cart-count" style="display: none;">0</span>
+        </div>
+
+        <button class="menu-toggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Product Detail Section -->
+  <section class="section">
+    <div class="container">
+      <!-- Breadcrumb -->
+      <div style="margin-bottom: var(--spacing-lg); color: var(--color-text-light); font-size: var(--font-size-sm);">
+        <a href="index.html" style="color: var(--color-text-light);">Home</a>
+        <span> / </span>
+        <a href="index.html#products" style="color: var(--color-text-light);">Products</a>
+        <span> / </span>
+        <span id="product-category">Product</span>
+      </div>
+
+      <div class="product-detail">
+        <!-- Product Gallery -->
+        <div class="product-gallery">
+          <div class="main-image">
+            <img id="main-image" src="" alt="Product Image">
+          </div>
+          <div id="thumbnail-list" class="thumbnail-list">
+            <!-- Thumbnails will be loaded by JavaScript -->
+          </div>
+        </div>
+
+        <!-- Product Info -->
+        <div class="product-detail-info">
+          <h1 id="product-name">Product Name</h1>
+
+          <!-- Product Rating Summary -->
+          <div id="product-detail-rating" class="product-rating" style="margin-bottom: var(--spacing-md); display: none;">
+            <a href="#customer-reviews" style="display: flex; align-items: center; gap: 0.5rem; color: inherit; text-decoration: none;">
+              <span class="rating-stars" id="product-detail-stars"></span>
+              <span class="rating-count" id="product-detail-count"></span>
+            </a>
+          </div>
+
+          <div class="product-meta">
+            <div class="product-meta-item">
+              <span class="product-meta-label">Brand</span>
+              <span class="product-meta-value" id="product-brand">REHOTTOP</span>
+            </div>
+            <div class="product-meta-item">
+              <span class="product-meta-label">Model</span>
+              <span class="product-meta-value" id="product-model">-</span>
+            </div>
+          </div>
+
+          <div class="product-price" id="product-price" style="font-size: var(--font-size-4xl); margin-bottom: var(--spacing-lg);">
+            $0.00
+          </div>
+
+          <div class="product-description" id="product-description">
+            Loading product details...
+          </div>
+
+          <div style="display: flex; gap: var(--spacing-md); margin-top: var(--spacing-xl);">
+            <button id="add-to-cart-btn" class="btn btn-primary" style="flex: 1;">
+              Add to Cart
+            </button>
+            <a href="index.html#products" class="btn btn-secondary" style="flex: 1;">
+              ← Back to Products
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews Section -->
+  <section class="section reviews-section judgeme-reviews" id="customer-reviews">
+    <div class="container">
+      <h2 class="reviews-main-title">Customer Reviews</h2>
+
+      <!-- Judge.me Style Rating Summary -->
+      <div class="judgeme-summary">
+        <div class="summary-left">
+          <div class="overall-rating">
+            <div class="rating-number" id="product-rating-value">5.0</div>
+            <div class="rating-stars-large" id="product-rating-stars"></div>
+            <div class="rating-text">Based on <span id="product-rating-count">0</span> reviews</div>
+          </div>
+        </div>
+        <div class="summary-middle" id="rating-breakdown-container">
+          <!-- Rating breakdown bars will be inserted here -->
+        </div>
+        <div class="summary-right">
+          <button class="btn btn-primary judgeme-write-btn" onclick="document.getElementById('write-review-form').scrollIntoView({behavior: 'smooth'})">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+              <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+            </svg>
+            Write a Review
+          </button>
+        </div>
+      </div>
+
+      <!-- Reviews List -->
+      <div class="reviews-list judgeme-reviews-list">
+        <!-- Reviews will be loaded by JavaScript -->
+      </div>
+
+      <!-- Pagination -->
+      <div class="review-pagination"></div>
+
+      <!-- Write Review Form -->
+      <div class="write-review-section" id="write-review-form">
+        <h3>Write a Customer Review</h3>
+        <form onsubmit="handleReviewSubmit(event)" class="review-form">
+          <div class="form-group">
+            <label for="review-name">Name *</label>
+            <input type="text" id="review-name" required maxlength="50">
+          </div>
+
+          <div class="form-group">
+            <label>Rating *</label>
+            <div class="rating-input">
+              <input type="radio" id="star5" name="rating" value="5" required>
+              <label for="star5" title="5 stars">★</label>
+              <input type="radio" id="star4" name="rating" value="4">
+              <label for="star4" title="4 stars">★</label>
+              <input type="radio" id="star3" name="rating" value="3">
+              <label for="star3" title="3 stars">★</label>
+              <input type="radio" id="star2" name="rating" value="2">
+              <label for="star2" title="2 stars">★</label>
+              <input type="radio" id="star1" name="rating" value="1">
+              <label for="star1" title="1 star">★</label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="review-title">Review Title *</label>
+            <input type="text" id="review-title" required maxlength="100" placeholder="Summarize your experience">
+          </div>
+
+          <div class="form-group">
+            <label for="review-text">Review *</label>
+            <textarea id="review-text" required rows="6" maxlength="1000" placeholder="Share your thoughts about this product"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Submit Review</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related Products Section (Optional) -->
+  <section class="section" style="background-color: var(--color-background-light);">
+    <div class="container">
+      <h2 class="text-center">Explore More Products</h2>
+      <div style="text-align: center; margin-top: var(--spacing-xl);">
+        <a href="index.html#products" class="btn btn-primary">View All Products</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>REHOTTOP</h3>
+          <p>Premium automotive accessories designed for performance, reliability, and innovation. Your trusted partner for tire inflators, jump starters, and automotive tools.</p>
+          <div class="contact-info" style="margin-top: 1rem;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            <a href="mailto:REHOTTOP@hotmail.com">REHOTTOP@hotmail.com</a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <p><a href="index.html">Home</a></p>
+          <p><a href="index.html#products">Products</a></p>
+          <p><a href="about.html">About Us</a></p>
+        </div>
+        <div class="footer-section">
+          <h3>Shop Our Products</h3>
+          <p><a href="https://www.walmart.com/global/seller/102745073" target="_blank">Walmart Store</a></p>
+          <p><a href="https://www.amazon.com/stores/Rehottoptireinflator/page/22E19493-712A-4AF1-98D8-9BFCDADCEB93?lp_asin=B0DMNLXZ6J&ref_=ast_bln" target="_blank">Amazon Store</a></p>
+          <p style="margin-top: 1rem;">Need help? Email us at <a href="mailto:REHOTTOP@hotmail.com">REHOTTOP@hotmail.com</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <p>&copy; 2024 REHOTTOP. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cart Modal -->
+  <div id="cart-modal" class="modal">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeCart()">&times;</button>
+      <h2>Shopping Cart</h2>
+      <div id="cart-items-list" class="cart-items">
+        <div class="cart-empty">Your cart is empty</div>
+      </div>
+      <div class="cart-total">
+        <span>Total:</span>
+        <span id="cart-total-amount">$0.00</span>
+      </div>
+      <button class="btn btn-primary" onclick="proceedToCheckout()" style="width: 100%; margin-top: 1rem;">
+        Proceed to Checkout
+      </button>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/profanity-filter.js?v=1765337111"></script>
+  <script src="assets/js/reviews.js?v=1765337111"></script>
+  <script src="assets/js/main.js?v=1765337111"></script>
+</body>
+</html>

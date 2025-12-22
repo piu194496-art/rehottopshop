@@ -1,0 +1,35 @@
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>REHOTTOP</h3>
+          <p>Premium automotive accessories designed for performance, reliability, and innovation. Your trusted partner for tire inflators, jump starters, and automotive tools.</p>
+          <div class="contact-info" style="margin-top: 1rem;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            <a href="mailto:REHOTTOP@hotmail.com">REHOTTOP@hotmail.com</a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <p><a href="index.html">Home</a></p>
+          <p><a href="index.html#products">Products</a></p>
+          <p><a href="about.html">About Us</a></p>
+        </div>
+        <div class="footer-section">
+          <h3>Shop Our Products</h3>
+          <p><a href="https://www.walmart.com/global/seller/102745073" target="_blank">Walmart Store</a></p>
+          <p><a href="https://www.amazon.com/stores/Rehottoptireinflator/page/22E19493-712A-4AF1-98D8-9BFCDADCEB93?lp_asin=B0DMNLXZ6J&ref_=ast_bln" target="_blank">Amazon Store</a></p>
+          <p style="margin-top: 1rem;">Need help? Email us at <a href="mailto:REHOTTOP@hotmail.com">REHOTTOP@hotmail.com</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <p>&copy; 2024 REHOTTOP. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>

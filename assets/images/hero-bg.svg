@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600">
+  <defs>
+    <linearGradient id="roadGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2c3e50;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#34495e;stop-opacity:0.5" />
+    </linearGradient>
+  </defs>
+
+  <!-- Road -->
+  <rect x="0" y="450" width="1200" height="150" fill="url(#roadGrad)"/>
+
+  <!-- Road lines -->
+  <rect x="50" y="520" width="80" height="8" fill="#fff" opacity="0.6"/>
+  <rect x="180" y="520" width="80" height="8" fill="#fff" opacity="0.6"/>
+  <rect x="310" y="520" width="80" height="8" fill="#fff" opacity="0.6"/>
+  <rect x="440" y="520" width="80" height="8" fill="#fff" opacity="0.6"/>
+  <rect x="570" y="520" width="80" height="8" fill="#fff" opacity="0.6"/>
+  <rect x="700" y="520" width="80" height="8" fill="#fff" opacity="0.6"/>
+  <rect x="830" y="520" width="80" height="8" fill="#fff" opacity="0.6"/>
+  <rect x="960" y="520" width="80" height="8" fill="#fff" opacity="0.6"/>
+  <rect x="1090" y="520" width="80" height="8" fill="#fff" opacity="0.6"/>
+
+  <!-- Simple car silhouette -->
+  <g opacity="0.15" transform="translate(800, 350)">
+    <!-- Car body -->
+    <rect x="0" y="60" width="200" height="50" rx="10" fill="#333"/>
+    <!-- Car roof -->
+    <path d="M 40 60 L 70 20 L 130 20 L 160 60 Z" fill="#333"/>
+    <!-- Wheels -->
+    <circle cx="40" cy="120" r="20" fill="#1a1a1a"/>
+    <circle cx="40" cy="120" r="12" fill="#555"/>
+    <circle cx="160" cy="120" r="20" fill="#1a1a1a"/>
+    <circle cx="160" cy="120" r="12" fill="#555"/>
+    <!-- Windows -->
+    <path d="M 50 55 L 75 25 L 95 25 L 95 55 Z" fill="#5a6d7f" opacity="0.5"/>
+    <path d="M 105 55 L 105 25 L 125 25 L 150 55 Z" fill="#5a6d7f" opacity="0.5"/>
+  </g>
+
+  <!-- Tire pressure indicator icons (subtle) -->
+  <g opacity="0.1" transform="translate(200, 100)">
+    <circle cx="0" cy="0" r="30" stroke="#fff" stroke-width="3" fill="none"/>
+    <text x="0" y="10" font-family="Arial" font-size="30" font-weight="bold" fill="#fff" text-anchor="middle">P</text>
+  </g>
+
+  <g opacity="0.1" transform="translate(350, 150)">
+    <circle cx="0" cy="0" r="25" stroke="#fff" stroke-width="2" fill="none"/>
+    <path d="M -8 0 L 0 -10 L 8 0" stroke="#fff" stroke-width="3" fill="none"/>
+  </g>
+</svg>
