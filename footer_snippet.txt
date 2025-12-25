@@ -21,8 +21,8 @@
         </div>
         <div class="footer-section">
           <h3>Shop Our Products</h3>
-          <p><a href="https://www.walmart.com/global/seller/102745073" target="_blank">Walmart Store</a></p>
-          <p><a href="https://www.amazon.com/stores/Rehottoptireinflator/page/22E19493-712A-4AF1-98D8-9BFCDADCEB93?lp_asin=B0DMNLXZ6J&ref_=ast_bln" target="_blank">Amazon Store</a></p>
+          <p><a href="https://rehottopshop.com/product.html?id=rehottop-cordless-tire-inflator-portable-air-compressor-180psi-12v-dc-air-pump-for-car-with-auto-shutoff-led-light-tire-pump-for-cars-bicycle-motorcycles" target="_blank">Inflator</a></p>
+          <p><a href="https://rehottopshop.com/product.html?id=rehottop-rs5-car-jump-starter-tire-inflator-2-in-1" target="_blank">Jump Starter</a></p>
           <p style="margin-top: 1rem;">Need help? Email us at <a href="mailto:REHOTTOP@hotmail.com">REHOTTOP@hotmail.com</a></p>
         </div>
       </div>

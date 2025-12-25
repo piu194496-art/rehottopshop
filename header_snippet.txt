@@ -28,3 +28,31 @@
       </div>
     </div>
   </header>
+<section class="category-section">
+  <div class="container">
+    <h2 class="category-title">Shop By Category</h2>
+
+    <div class="category-grid">
+      <a href="#jump-starters" class="category-item">
+        <img src="assets/images/jump-starter.png" alt="Jump Starters">
+        <span>Jump Starters</span>
+      </a>
+
+      <a href="#tire-inflator" class="category-item">
+        <img src="assets/images/tire-inflator.png" alt="Tire Inflator">
+        <span>Tire Inflator</span>
+      </a>
+
+     <a href="#car-vacuum" class="category-item">
+  <img src="assets/images/car-vacuum.png" alt="Car Vacuum">
+  <span>Car Vacuum</span>
+</a>
+
+      <a href="#air-duster" class="category-item">
+        <img src="assets/images/air-duster.png" alt="Air Duster">
+        <span>Air Duster</span>
+      </a>
+    </div>
+  </div>
+</section>
+

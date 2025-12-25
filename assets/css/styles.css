@@ -1740,3 +1740,45 @@ a:hover {
     flex-wrap: wrap;
   }
 }
+
+.category-section {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.category-title {
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+
+.category-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.category-item {
+  text-decoration: none;
+  color: inherit;
+  width: 160px;
+}
+
+.category-item img {
+  width: 100%;
+  max-width: 120px;
+  margin-bottom: 12px;
+}
+
+.category-item span {
+  display: block;
+  font-weight: 600;
+}
+
+#jump-starters,
+#tire-inflator,
+#car-vacuum,
+#air-duster {
+  scroll-margin-top: 120px;
+}
+
