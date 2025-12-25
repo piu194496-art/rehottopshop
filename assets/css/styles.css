@@ -136,6 +136,7 @@ a:hover {
   background: radial-gradient(ellipse at top left, rgba(99, 102, 241, 0.05) 0%, transparent 50%),
               radial-gradient(ellipse at bottom right, rgba(244, 63, 94, 0.05) 0%, transparent 50%);
   filter: blur(80px);
+  z-index: -1;
 }
 
 /* Floating Geometric Shapes */
